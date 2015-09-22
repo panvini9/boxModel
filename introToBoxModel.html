@@ -1,21 +1,33 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Review and Positioning</title>
+<title>Intro To The Box Model</title>
 <meta charset="utf-8" />
-<link rel="stylesheet" href="style.css">
-<link href='http://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet' type='text/css'>
-<style>
 
-
-
-</style>
 </head>
 <body>
-<section id="noteonclasses">
-  <h1>A note on classes</h1>
-  <p>Throughout this document, you will see the class attribute set on various elements. The class attribute, like the id attribute, lets us set a label on elements we can then refer to in our css. However, unlike the id, the class attribute can be used multiple times in the same document and is usually used to denote a category of elements. For example, cats are a category of animals (class), but my cat has the specific name "Ripley" (id). We select classes in by using a . and the name of the class.</p>
+<section id="noteondivandsection">
+  <h1>A note on Section and Div</h1>
+  <p>Throughout this document, you will see the &lt;section&gt; and &lt;div&gt; tags used. These tags allow us to divide the document into blocks (see more about blocks below). The div tag is for generic blocks (those without logical meaning in the document) and the section tag is for blocks that divide the document into logical sections (like you would find in an outline).</p>
 </section>
+<section id="inlineandblock">
+  <h1>Inline and Block</h1>
+  <p>Tags can be displayed as either <em>inline</em> or <em>block</em> elements. Inline elements only take up the same amount of space as their contents. Think of inline elements as the highlighting that occurs when you select text in a word document. Block elements occupy a rectangular block of space, the same width as their container (by default, as we'll see we can change this). Think of block elements as drawing a rectangular box on the page that you can use to size, move, and arrange elements contained inside. We can learn more about Inline and Block by applying some simple css to the em and p tags.</p>
+</section>
+<section id="boxmodel">
+  <h1>Box Model</h1>
+  <p>Every block element defines a rectangle on the page. Each rectangle is surrounded by its:</p>
+    <ul>
+      <li><em>Border:</em> if we draw a line showing the rectangle defined by the element, we draw its border.</li>
+      <li><em>Margin:</em> the space between the border and the next element is the margin.</li>
+      <li><em>Padding</em> the space between the content of the element and its border is the padding</li>
+    </ul>
+    <p>The example below demonstrates the box model. In this example, the black line is the border, the green area is the margin, and the blue area is the padding.</p>
+    <div id="boxmodeldemocon">
+      <div id="boxmodeldemo">
+        This is the content of the div. In this case the content is just text, but it could also include images, or other elements (including divs inside of divs). The space between this content and the black border is the padding. The green area outside the border is the margin.
+      </div>
+    </div>
 <section id="widthMargins">
 	<h1>Width, Margins, Padding and Borders</h1>
   <p>We can set width, margin, padding, and border properties on <em>block</em> elements. These values work differently, sometimes not at all, for inline elements. The way these values control how block elements take up space on the page is called the <em>box model</em>. The basic concept is simple. The width property sets the width of the element. The border sets the visible border of the element (if any). The margin sets the space between the border and the next element, and the padding sets the space between the border and the element's content. We'll see each of these in turn now.</p>

@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Alegreya);
+
 body {
   font-family: 'Alegreya', sans-serif;
   padding: 0;
@@ -95,4 +97,16 @@ h1 {
   background-color:lightblue;
   width:80%;
   margin:0 5%;
+}
+
+#boxmodeldemocon {
+  background-color: #00AA00;
+  overflow: auto;
+}
+
+#boxmodeldemo {
+  margin: 20px;
+  border: 1px solid black;
+  padding: 20px;
+  background-color: lightblue;
 }
